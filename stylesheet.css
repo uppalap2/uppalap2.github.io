@@ -196,3 +196,7 @@ table tbody tr td:first-child {
   height: 120px;
   object-fit: cover;
 }
+
+p {
+  text-align: left;
+}
