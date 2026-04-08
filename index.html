@@ -1,0 +1,768 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Naveen Uppalapati</title>
+
+    <meta name="author" content="Naveen">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    
+  </head>
+
+  <body>
+    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <tr style="padding:0px">
+        <td style="padding:0px">
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr style="padding:0px">
+              <td style="padding:2.5%;width:63%;vertical-align:middle">
+                <p class="name" style="text-align: center;">
+                  Naveen K Uppalapati
+                </p>
+                <p>
+		I'm a research scientist at <a href="https://www.ncsa.illinois.edu">NCSA</a> in UIUC, where I mostly work on <a href="https://digitalag.illinois.edu/">Robotics</a>.
+    I'm also executive director for the <a href="https://i-farm.illinois.edu/">Farm of the Future</a> testbed. I played a keyrole in several projects such as <a href="https://sites.google.com/view/coalescepreview/about-us">COALESCE</a>, <a href="https://digitalag.illinois.edu/2023/04/13/cda-to-create-profitable-food-oases-in-urban-ecosystems/">Robotics Integrated High Tunnels (RobInHighTs)</a>, and soft arms for compact Ag-bots .
+		I did my PhD at <a href="https://illinois.edu/">UIUC</a>, where I was advised by <a href="https://ise.illinois.edu/directory/profile/gkrishna">Girish Krishnan</a>.
+
+                </p>
+                <p style="text-align:center">
+                  <a href="mailto:naveen.research.2014@gmail.com">Email</a> &nbsp;/&nbsp;
+                  <a href="data/Naveen_resume.pdf">CV</a> &nbsp;/&nbsp;
+                  <a href="https://scholar.google.com/citations?user=YmEbBGAAAAAJ&hl=en&authuser=1">Scholar</a> &nbsp;/&nbsp;
+                  <a href="https://www.linkedin.com/in/naveen-uppalapati">linkedin</a> &nbsp;/&nbsp;
+                  <a href="https://github.com/uppalap2">Github</a>
+                </p>
+              </td>
+              <td style="padding:2.5%;width:37%;max-width:37%">
+                <a href="images/Naveen_1.png"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/Naveen_1.png" class="hoverZoomLink"></a>
+              </td>
+            </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+              <tr>
+              <td style="padding:16px;width:100%;vertical-align:middle">
+                <h2>Research</h2>
+                <p>
+                  My research focuses on the design, modeling, and control of robotic systems
+for unstructured real-world environments, with an emphasis on agricultural
+applications. On the hardware side, I develop soft and hybrid rigid-soft
+manipulators that combine the compliance and dexterity of continuum arms
+with the payload capacity of rigid links, enabling safe and precise
+interaction with delicate crops in cluttered canopy environments.
+</p>
+<p>
+On the autonomy side, I work on vision-guided planning and control,
+including visual servoing, semantic mapping, and learning-based controllers
+that generalize to unseen environments. I am also interested in full-stack
+field robotics -- integrating perception, manipulation, and mobility on
+platforms that operate reliably in GPS-denied, high-variability outdoor
+settings such as high tunnels and orchards.
+</p>
+              </td>
+            </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+<!-- ==================== PAPER 17 ==================== -->
+<!-- ==================== HyReach - Soft Robotics 2026 ==================== -->
+<tr onmouseout="hyreach_stop()" onmouseover="hyreach_start()">
+  <td style="padding:16px;width:20%;vertical-align:middle">
+    <div class="one">
+      <div class="two" id='hyreach_image'>
+        <img src='images/hyreach.png' width="160">
+      </div>
+      <img src='images/hyreach.png' width="160">
+    </div>
+    <script type="text/javascript">
+      function hyreach_start() {
+        document.getElementById('hyreach_image').style.opacity = "1";
+      }
+      function hyreach_stop() {
+        document.getElementById('hyreach_image').style.opacity = "0";
+      }
+      hyreach_stop()
+    </script>
+  </td>
+  <td style="padding:20px;width:75%;vertical-align:middle">
+    <a href="https://arxiv.org/abs/2603.21421">
+      <span class="papertitle">HyReach: Vision-Guided Hybrid Manipulator Reaching in Unseen Cluttered Environments</span>
+    </a>
+    <br>
+    Shivani Kamtikar,
+    Kendall Koe,
+    Justin Wasserman,
+    Samhita Marri,
+    Benjamin Walt,
+    <strong>Naveen Kumar Uppalapati</strong>,
+    Girish Krishnan,
+    Girish Chowdhary
+    <br>
+    <em>Soft Robotics</em>, 2026 &nbsp;<span style="color:red;">(Accepted)</span>
+    <br>
+    <a href="https://arxiv.org/abs/2603.21421">arXiv</a>
+    <p></p>
+    <p>
+      HyReach uses vision-guided planning to enable a hybrid rigid-soft manipulator to reach targets in previously unseen cluttered environments, generalizing across obstacle configurations without environment-specific retraining.
+    </p>
+  </td>
+</tr>
+
+<!-- ==================== PAPER 16 ==================== -->
+<!-- JMR 2025 - Learning-Based Control Hybrid Arm -->
+<tr onmouseout="learnctrl_stop()" onmouseover="learnctrl_start()">
+  <td style="padding:16px;width:20%;vertical-align:middle">
+    <div class="one">
+      <div class="two" id='learnctrl_image'>
+        <img src='images/learnctrl.png' width="160">
+      </div>
+      <img src='images/learnctrl.png' width="160">
+    </div>
+    <script type="text/javascript">
+      function learnctrl_start() {
+        document.getElementById('learnctrl_image').style.opacity = "1";
+      }
+      function learnctrl_stop() {
+        document.getElementById('learnctrl_image').style.opacity = "0";
+      }
+      learnctrl_stop()
+    </script>
+  </td>
+  <td style="padding:20px;width:75%;vertical-align:middle">
+    <a href="https://doi.org/10.1115/1.4066977">
+      <span class="papertitle">Learning-Based Position and Orientation Control of a Hybrid Rigid-Soft Arm Manipulator</span>
+    </a>
+    <br>
+    Kendall Koe,
+    Samhita Marri,
+    Benjamin Walt,
+    Shivani Kamtikar,
+    <strong>Naveen Kumar Uppalapati</strong>,
+    Girish Krishnan,
+    Girish Chowdhary
+    <br>
+    <em>Journal of Mechanisms and Robotics (JMR)</em>, 2025
+    <br>
+    <a href="https://doi.org/10.1115/1.4066977">paper</a>
+    <p></p>
+    <p>
+      A data-driven controller jointly manages the rigid and soft degrees of freedom of a hybrid manipulator, learning arm dynamics at 4 Hz and using expert trajectory data to train a policy for simultaneous position and orientation control.
+    </p>
+  </td>
+</tr>
+
+
+<!-- ==================== PAPER 15 ==================== -->
+<!-- ICRA 2025 - Precision Harvesting -->
+<tr onmouseout="harvest_stop()" onmouseover="harvest_start()">
+  <td style="padding:16px;width:20%;vertical-align:middle">
+    <div class="one">
+      <div class="two" id='harvest_image'>
+        <video width= 100% height= 100% muted autoplay loop>
+          <source src="images/harvest_red.mp4" type="video/mp4">
+        </video>
+      </div>
+      <img src='images/harvest.png' width="160">
+    </div>
+    <script type="text/javascript">
+      function harvest_start() {
+        document.getElementById('harvest_image').style.opacity = "1";
+      }
+      function harvest_stop() {
+        document.getElementById('harvest_image').style.opacity = "0";
+      }
+      harvest_stop()
+    </script>
+  </td>
+  <td style="padding:20px;width:75%;vertical-align:middle">
+    <a href="https://ieeexplore.ieee.org/document/[TODO]">
+      <span class="papertitle">Precision Harvesting in Cluttered Environments: Integrating End Effector Design with Dual Camera Perception</span>
+    </a>
+    <br>
+    Kendall Koe,
+    Poojan Kalpeshbhai Shah,
+    Benjamin Walt,
+    Jordan Westphal,
+    Samhita Marri,
+    Shivani Kamtikar,
+    James Seungbum Nam,
+    <strong>Naveen Kumar Uppalapati</strong>,
+    Girish Chowdhary,
+    Girish Krishnan
+    <br>
+    <em>IEEE International Conference on Robotics and Automation (ICRA)</em>, 2025
+    <br>
+    <a href="https://ieeexplore.ieee.org/document/[TODO]">paper</a>
+    <p></p>
+    <p>
+      A precision harvesting system co-designs a compliant end effector with a dual-camera perception pipeline to localize and pick fruit in heavily occluded, cluttered canopy environments.
+    </p>
+  </td>
+</tr>
+ 
+
+<!-- ==================== PAPER 14 ==================== -->
+<!-- ICRA 2025 - Active Semantic Mapping -->
+<tr onmouseout="semmap_stop()" onmouseover="semmap_start()">
+  <td style="padding:16px;width:20%;vertical-align:middle">
+    <div class="one">
+      <div class="two" id='semmap_image'>
+        <img src='images/semmap.png' width="160">
+      </div>
+      <img src='images/semmap.png' width="160">
+    </div>
+    <script type="text/javascript">
+      function semmap_start() {
+        document.getElementById('semmap_image').style.opacity = "1";
+      }
+      function semmap_stop() {
+        document.getElementById('semmap_image').style.opacity = "0";
+      }
+      semmap_stop()
+    </script>
+  </td>
+  <td style="padding:20px;width:75%;vertical-align:middle">
+    <a href="https://ieeexplore.ieee.org/document/[TODO]">
+      <span class="papertitle">Active Semantic Mapping with Mobile Manipulator in Horticultural Environments</span>
+    </a>
+    <br>
+    Jose Cuaran,
+    Kulbir Singh Ahluwalia,
+    Kendall Koe,
+    <strong>Naveen Kumar Uppalapati</strong>,
+    Girish Chowdhary
+    <br>
+    <em>IEEE International Conference on Robotics and Automation (ICRA)</em>, 2025
+    <br>
+    <a href="https://ieeexplore.ieee.org/document/[TODO]">paper</a>
+    <p></p>
+    <p>
+      An active semantic mapping system enables a mobile manipulator to autonomously build fruit-annotated 3D maps of greenhouses, combining next-best-view planning with semantic segmentation for precision agriculture.
+    </p>
+  </td>
+</tr>
+ 
+
+<!-- ==================== PAPER 13 ==================== -->
+<!-- Ergonomics in Design 2025 - Healthcare Providers Robot Design -->
+<tr onmouseout="telehealth_stop()" onmouseover="telehealth_start()">
+  <td style="padding:16px;width:20%;vertical-align:middle">
+    <div class="one">
+      <div class="two" id='telehealth_image'>
+        <img src='images/telehealth.png' width="160">
+      </div>
+      <img src='images/telehealth.png' width="160">
+    </div>
+    <script type="text/javascript">
+      function telehealth_start() {
+        document.getElementById('telehealth_image').style.opacity = "1";
+      }
+      function telehealth_stop() {
+        document.getElementById('telehealth_image').style.opacity = "0";
+      }
+      telehealth_stop()
+    </script>
+  </td>
+  <td style="padding:20px;width:75%;vertical-align:middle">
+    <a href="https://doi.org/10.1177/10648046231202867">
+      <span class="papertitle">Engaging Healthcare Providers to Design a Robot for Telehealth</span>
+    </a>
+    <br>
+    Travis Kadylak,
+    <strong>Naveen Uppalapati</strong>,
+    Asif Huq,
+    Girish Krishnan,
+    Wendy A. Rogers
+    <br>
+    <em>Ergonomics in Design</em>, 2025
+    <br>
+    <a href="https://doi.org/10.1177/10648046231202867">paper</a>
+    <p></p>
+    <p>
+      A participatory design study with healthcare providers establishes functional and ergonomic requirements for a telehealth robot, informing design decisions for safe and effective remote patient care.
+    </p>
+  </td>
+</tr>
+             
+
+ <!-- ==================== PAPER 12 ==================== -->
+<!-- Gerontechnology 2024 - Older Adults Telehealth -->
+<tr onmouseout="geron_stop()" onmouseover="geron_start()">
+  <td style="padding:16px;width:20%;vertical-align:middle">
+    <div class="one">
+      <div class="two" id='geron_image'>
+        <img src='images/geron.png' width="160">
+      </div>
+      <img src='images/geron.png' width="160">
+    </div>
+    <script type="text/javascript">
+      function geron_start() {
+        document.getElementById('geron_image').style.opacity = "1";
+      }
+      function geron_stop() {
+        document.getElementById('geron_image').style.opacity = "0";
+      }
+      geron_stop()
+    </script>
+  </td>
+  <td style="padding:20px;width:75%;vertical-align:middle">
+    <a href="[TODO: Gerontechnology DOI link]">
+      <span class="papertitle">Understanding Older Adults' Perceptions and Attitudes Towards a Telehealth Robot</span>
+    </a>
+    <br>
+    Samuel A. Olatunji,
+    Husna Hussaini,
+    <strong>Naveen K. Uppalapati</strong>,
+    Girish Krishnan,
+    Wendy A. Rogers
+    <br>
+    <em>Gerontechnology</em>, 2024
+    <br>
+    <a href="[TODO: Gerontechnology DOI link]">paper</a>
+    <p></p>
+    <p>
+      A user study with older adults investigates perceptions and attitudes toward a morphologically adaptive telehealth robot, revealing key factors affecting trust, usability, and willingness to adopt robotic systems in home healthcare.
+    </p>
+  </td>
+</tr>           
+
+<!-- ==================== PAPER 11 ==================== -->
+<!-- IJRR 2024 - Under-Canopy SLAM Dataset -->
+<tr onmouseout="undercanopy_stop()" onmouseover="undercanopy_start()">
+  <td style="padding:16px;width:20%;vertical-align:middle">
+    <div class="one">
+      <div class="two" id='undercanopy_image'>
+        <img src='images/undercanopy.png' width="160">
+      </div>
+      <img src='images/undercanopy.png' width="160">
+    </div>
+    <script type="text/javascript">
+      function undercanopy_start() {
+        document.getElementById('undercanopy_image').style.opacity = "1";
+      }
+      function undercanopy_stop() {
+        document.getElementById('undercanopy_image').style.opacity = "0";
+      }
+      undercanopy_stop()
+    </script>
+  </td>
+  <td style="padding:20px;width:75%;vertical-align:middle">
+    <a href="https://doi.org/10.1177/02783649231218180">
+      <span class="papertitle">Under-Canopy Dataset for Advancing Simultaneous Localization and Mapping in Agricultural Robotics</span>
+    </a>
+    <br>
+    Jose Cuaran,
+    Andres Eduardo Baquero Velasquez,
+    Mateus Valverde Gasparino,
+    <strong>Naveen Kumar Uppalapati</strong>,
+    Arun Narenthiran Sivakumar,
+    Justin Wasserman,
+    Muhammad Huzaifa,
+    Sarita Adve,
+    Girish Chowdhary
+    <br>
+    <em>The International Journal of Robotics Research (IJRR)</em>, 2024
+    <br>
+    <a href="https://doi.org/10.1177/02783649231218180">paper</a>
+    <p></p>
+    <p>
+      A large-scale dataset collected under crop canopies with diverse sensor modalities for benchmarking SLAM algorithms in GPS-denied agricultural environments, addressing unique challenges of dense vegetation and repetitive structure.
+    </p>
+  </td>
+</tr>
+
+          
+
+<!-- ==================== PAPER 9 ==================== -->
+<!-- RA-L 2022 - Visual Servoing Soft Arm -->
+<tr onmouseout="visservo_stop()" onmouseover="visservo_start()">
+  <td style="padding:16px;width:20%;vertical-align:middle">
+    <div class="one">
+      <div class="two" id='visservo_image'>
+        <img src='images/visservo.png' width="160">
+      </div>
+      <img src='images/visservo.png' width="160">
+    </div>
+    <script type="text/javascript">
+      function visservo_start() {
+        document.getElementById('visservo_image').style.opacity = "1";
+      }
+      function visservo_stop() {
+        document.getElementById('visservo_image').style.opacity = "0";
+      }
+      visservo_stop()
+    </script>
+  </td>
+  <td style="padding:20px;width:75%;vertical-align:middle">
+    <a href="https://ieeexplore.ieee.org/document/9695361">
+      <span class="papertitle">Visual Servoing for Pose Control of Soft Continuum Arm in a Structured Environment</span>
+    </a>
+    <br>
+    Shivani Kamtikar,
+    Samhita Marri,
+    Benjamin Walt,
+    <strong>Naveen Kumar Uppalapati</strong>,
+    Girish Krishnan,
+    Girish Chowdhary
+    <br>
+    <em>IEEE Robotics and Automation Letters (RA-L)</em>, 2022
+    <br>
+    <a href="https://ieeexplore.ieee.org/document/9695361">paper</a>
+    <p></p>
+    <p>
+      A visual servoing controller achieves closed-loop pose control of a soft continuum arm using RGB camera feedback, enabling reliable tracking of end-effector position and orientation in structured agricultural environments.
+    </p>
+  </td>
+</tr>
+
+<!-- ==================== PAPER 8 ==================== -->
+<!-- ICRA 2022 - Physics-Informed Vision Reconstruction -->
+<tr onmouseout="physvis_stop()" onmouseover="physvis_start()">
+  <td style="padding:16px;width:20%;vertical-align:middle">
+    <div class="one">
+      <div class="two" id='physvis_image'>
+        <img src='images/physvis.png' width="160">
+      </div>
+      <img src='images/physvis.png' width="160">
+    </div>
+    <script type="text/javascript">
+      function physvis_start() {
+        document.getElementById('physvis_image').style.opacity = "1";
+      }
+      function physvis_stop() {
+        document.getElementById('physvis_image').style.opacity = "0";
+      }
+      physvis_stop()
+    </script>
+  </td>
+  <td style="padding:20px;width:75%;vertical-align:middle">
+    <a href="https://ieeexplore.ieee.org/document/9812218">
+      <span class="papertitle">A Physics-Informed, Vision-Based Method to Reconstruct All Deformation Modes in Slender Bodies</span>
+    </a>
+    <br>
+    Seung Hyun Kim,
+    Heng-Sheng Chang,
+    Chia-Hsien Shih,
+    <strong>Naveen Kumar Uppalapati</strong>,
+    Udit Halder,
+    Girish Krishnan,
+    Prashant G. Mehta,
+    Mattia Gazzola
+    <br>
+    <em>IEEE International Conference on Robotics and Automation (ICRA)</em>, 2022
+    <br>
+    <a href="https://ieeexplore.ieee.org/document/9812218">paper</a>
+    <p></p>
+    <p>
+      A physics-informed vision pipeline reconstructs the full 3D deformation of slender soft bodies -- including bending, twisting, and extension -- from camera images alone, using Cosserat rod mechanics as a prior.
+    </p>
+  </td>
+</tr>
+
+ <!-- ==================== PAPER 7 ==================== -->
+<!-- RSS 2020 - Berry Picking Robot -->
+<tr onmouseout="berry_stop()" onmouseover="berry_start()">
+  <td style="padding:16px;width:20%;vertical-align:middle">
+    <div class="one">
+      <div class="two" id='berry_image'>
+        <img src='images/berry.png' width="160">
+      </div>
+      <img src='images/berry.png' width="160">
+    </div>
+    <script type="text/javascript">
+      function berry_start() {
+        document.getElementById('berry_image').style.opacity = "1";
+      }
+      function berry_stop() {
+        document.getElementById('berry_image').style.opacity = "0";
+      }
+      berry_stop()
+    </script>
+  </td>
+  <td style="padding:20px;width:75%;vertical-align:middle">
+    <a href="https://roboticsproceedings.org/rss16/p027.html">
+      <span class="papertitle">A Berry Picking Robot With A Hybrid Soft-Rigid Arm: Design and Task Space Control</span>
+    </a>
+    <br>
+    <strong>Naveen Kumar Uppalapati</strong>,
+    Benjamin Walt,
+    Aaron J. Havens,
+    Armeen Mahdian,
+    Girish Chowdhary,
+    Girish Krishnan
+    <br>
+    <em>Robotics: Science and Systems (RSS)</em>, 2020
+    <br>
+    <a href="https://roboticsproceedings.org/rss16/p027.html">project page</a> /
+    <a href="https://www.roboticsproceedings.org/rss16/p027.pdf">PDF</a>
+    <p></p>
+    <p>
+      A hybrid rigid-soft robotic arm for berry harvesting combines a rigid link for gross positioning with an extendable soft manipulator for fine navigation; a magnetic sensor and RL-based controller achieve reliable end-effector control in cluttered plant environments.
+    </p>
+  </td>
+</tr>           
+
+<!-- ==================== PAPER 6 ==================== -->
+<!-- JMR 2021 - Fiber-Reinforced Parallel Combination -->
+<tr onmouseout="fiber_stop()" onmouseover="fiber_start()">
+  <td style="padding:16px;width:20%;vertical-align:middle">
+    <div class="one">
+      <div class="two" id='fiber_image'>
+        <img src='images/fiber.png' width="160">
+      </div>
+      <img src='images/fiber.png' width="160">
+    </div>
+    <script type="text/javascript">
+      function fiber_start() {
+        document.getElementById('fiber_image').style.opacity = "1";
+      }
+      function fiber_stop() {
+        document.getElementById('fiber_image').style.opacity = "0";
+      }
+      fiber_stop()
+    </script>
+  </td>
+  <td style="padding:20px;width:75%;vertical-align:middle">
+    <a href="https://doi.org/10.1115/1.4048418">
+      <span class="papertitle">Design and Modeling of Soft Continuum Manipulators Using Parallel Asymmetric Combination of Fiber-Reinforced Elastomers</span>
+    </a>
+    <br>
+    <strong>Naveen Kumar Uppalapati</strong>,
+    Girish Krishnan
+    <br>
+    <em>Journal of Mechanisms and Robotics (JMR)</em>, 2021
+    <br>
+    <a href="https://doi.org/10.1115/1.4048418">paper</a>
+    <p></p>
+    <p>
+      A design and modeling framework for soft continuum manipulators built from parallel asymmetric fiber-reinforced elastomer actuators, enabling richer 3D deformation modes through geometric parameter variation.
+    </p>
+  </td>
+</tr>
+
+
+<!-- ==================== PAPER 5 ==================== -->
+<!-- RoboSoft 2020 - Continuous RL Control -->
+<tr onmouseout="contrl_stop()" onmouseover="contrl_start()">
+  <td style="padding:16px;width:20%;vertical-align:middle">
+    <div class="one">
+      <div class="two" id='contrl_image'>
+        <img src='images/contrl.png' width="160">
+      </div>
+      <img src='images/contrl.png' width="160">
+    </div>
+    <script type="text/javascript">
+      function contrl_start() {
+        document.getElementById('contrl_image').style.opacity = "1";
+      }
+      function contrl_stop() {
+        document.getElementById('contrl_image').style.opacity = "0";
+      }
+      contrl_stop()
+    </script>
+  </td>
+  <td style="padding:20px;width:75%;vertical-align:middle">
+    <a href="https://ieeexplore.ieee.org/document/9116067">
+      <span class="papertitle">Continuous Control of a Soft Continuum Arm Using Deep Reinforcement Learning</span>
+    </a>
+    <br>
+    Sreeshankar Satheeshbabu,
+    <strong>Naveen K. Uppalapati</strong>,
+    Tianshi Fu,
+    Girish Krishnan
+    <br>
+    <em>IEEE International Conference on Soft Robotics (RoboSoft)</em>, 2020
+    <br>
+    <a href="https://ieeexplore.ieee.org/document/9116067">paper</a>
+    <p></p>
+    <p>
+      Extends open-loop soft arm control to continuous closed-loop operation using deep RL, enabling real-time trajectory tracking for a pneumatic continuum manipulator across a cluttered workspace.
+    </p>
+  </td>
+</tr>
+ 
+
+<!-- ==================== PAPER 4 ==================== -->
+<!-- RA-L 2020 - VaLeNS -->
+<tr onmouseout="valens_stop()" onmouseover="valens_start()">
+  <td style="padding:16px;width:20%;vertical-align:middle">
+    <div class="one">
+      <div class="two" id='valens_image'>
+        <img src='images/valens.png' width="160">
+      </div>
+      <img src='images/valens.png' width="160">
+    </div>
+    <script type="text/javascript">
+      function valens_start() {
+        document.getElementById('valens_image').style.opacity = "1";
+      }
+      function valens_stop() {
+        document.getElementById('valens_image').style.opacity = "0";
+      }
+      valens_stop()
+    </script>
+  </td>
+  <td style="padding:20px;width:75%;vertical-align:middle">
+    <a href="https://ieeexplore.ieee.org/document/8967190">
+      <span class="papertitle">VaLeNS: Design of a Novel Variable Length Nested Soft Arm</span>
+    </a>
+    <br>
+    <strong>Naveen Kumar Uppalapati</strong>,
+    Girish Krishnan
+    <br>
+    <em>IEEE Robotics and Automation Letters (RA-L)</em>, 2020
+    <br>
+    <a href="https://ieeexplore.ieee.org/document/8967190">paper</a>
+    <p></p>
+    <p>
+      VaLeNS is a variable-length nested soft arm that telescopes rigid and soft segments to achieve a tenfold stiffness modulation and significantly expanded workspace compared to fixed-length designs.
+    </p>
+  </td>
+</tr>
+
+
+<!-- ==================== PAPER 3 ==================== -->
+<!-- ICRA 2019 - Open Loop RL -->
+<tr onmouseout="openloop_stop()" onmouseover="openloop_start()">
+  <td style="padding:16px;width:20%;vertical-align:middle">
+    <div class="one">
+      <div class="two" id='openloop_image'>
+        <img src='images/openloop.png' width="160">
+      </div>
+      <img src='images/openloop.png' width="160">
+    </div>
+    <script type="text/javascript">
+      function openloop_start() {
+        document.getElementById('openloop_image').style.opacity = "1";
+      }
+      function openloop_stop() {
+        document.getElementById('openloop_image').style.opacity = "0";
+      }
+      openloop_stop()
+    </script>
+  </td>
+  <td style="padding:20px;width:75%;vertical-align:middle">
+    <a href="https://ieeexplore.ieee.org/document/8793659">
+      <span class="papertitle">Open Loop Position Control of Soft Continuum Arm Using Deep Reinforcement Learning</span>
+    </a>
+    <br>
+    Sreeshankar Satheeshbabu,
+    <strong>Naveen Kumar Uppalapati</strong>,
+    Girish Chowdhary,
+    Girish Krishnan
+    <br>
+    <em>IEEE International Conference on Robotics and Automation (ICRA)</em>, 2019
+    <br>
+    <a href="https://ieeexplore.ieee.org/document/8793659">paper</a>
+    <p></p>
+    <p>
+      A deep reinforcement learning policy achieves open-loop 3D position control of a pneumatic soft continuum arm without requiring explicit models, trained entirely in simulation and transferred to hardware.
+    </p>
+  </td>
+</tr>
+ 
+
+<!-- ==================== PAPER 2 ==================== -->
+<!-- Soft Robotics 2018 - Spiral Grippers -->
+<tr onmouseout="spiral_stop()" onmouseover="spiral_start()">
+  <td style="padding:16px;width:20%;vertical-align:middle">
+    <div class="one">
+          <div class="one">
+      <div class="two" id='spiral_image'>
+        <video width= 100% height= 100% muted autoplay loop>
+          <source src="images/spiral_red.mp4" type="video/mp4">
+        </video>
+      </div>
+      <img src='images/spiral.png' width="160">
+    </div>
+    <script type="text/javascript">
+      function spiral_start() {
+        document.getElementById('spiral_image').style.opacity = "1";
+      }
+      function spiral_stop() {
+        document.getElementById('spiral_image').style.opacity = "0";
+      }
+      spiral_stop()
+    </script>
+  </td>
+  <td style="padding:20px;width:75%;vertical-align:middle">
+    <a href="https://doi.org/10.1089/soro.2017.0144">
+      <span class="papertitle">Towards Pneumatic Spiral Grippers: Modeling and Design Considerations</span>
+    </a>
+    <br>
+    <strong>Naveen Kumar Uppalapati</strong>,
+    Girish Krishnan
+    <br>
+    <em>Soft Robotics</em>, 2018
+    <br>
+    <a href="https://doi.org/10.1089/soro.2017.0144">journal</a> /
+    <a href="https://pubmed.ncbi.nlm.nih.gov/30040037/">PubMed</a>
+    <p></p>
+    <p>
+      Inspired by how climbing plants wrap around objects, this work models spiral pneumatic grippers using helical and Cosserat rod models, enabling systematic design for a range of slender object sizes.
+    </p>
+  </td>
+</tr>
+
+
+            <!-- ==================== PAPER 1 ==================== -->
+<!-- RoboSoft 2018 - Parameter Estimation -->
+<tr onmouseout="param_stop()" onmouseover="param_start()">
+  <td style="padding:16px;width:20%;vertical-align:middle">
+    <div class="one">
+      <div class="two" id='param_image'>
+        <img src='images/param_est.png' width="160">
+      </div>
+      <img src='images/param_est.png' width="160">
+    </div>
+    <script type="text/javascript">
+      function param_start() {
+        document.getElementById('param_image').style.opacity = "1";
+      }
+      function param_stop() {
+        document.getElementById('param_image').style.opacity = "0";
+      }
+      param_stop()
+    </script>
+  </td>
+  <td style="padding:20px;width:75%;vertical-align:middle">
+    <a href="https://ieeexplore.ieee.org/document/8405380">
+      <span class="papertitle">Parameter Estimation and Modeling of a Pneumatic Continuum Manipulator with Asymmetric Building Blocks</span>
+    </a>
+    <br>
+    <strong>Naveen Kumar Uppalapati</strong>,
+    Gaurav Singh,
+    Girish Krishnan
+    <br>
+    <em>IEEE International Conference on Soft Robotics (RoboSoft)</em>, 2018
+    <br>
+    <a href="https://ieeexplore.ieee.org/document/8405380">paper</a>
+    <p></p>
+    <p>
+      A Cosserat rod model estimates deformation of a pneumatic continuum manipulator from asymmetric fiber-reinforced building blocks, validated against physical experiments with external loads.
+    </p>
+  </td>
+</tr>
+
+
+
+
+          
+
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:0px">
+                <br>
+                <p style="text-align:center;font-size:small;">
+                  Template adapted from Jon Barron <a href="https://github.com/jonbarron/jonbarron_website">source code</a>. 
+                </p>
+              </td>
+            </tr>
+          </tbody></table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
