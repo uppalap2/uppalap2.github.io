@@ -81,6 +81,54 @@ settings such as high tunnels and orchards.
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+<!-- ==================== PAPER 19 ==================== -->
+<!-- ==================== VLM task planning - CEA 2026 ==================== -->
+<tr onmouseout="vlmplan_stop()" onmouseover="vlmplan_start()">
+  <td style="padding:16px;width:20%;vertical-align:middle;text-align:center">
+    <div class="one">
+      <div class="two" id='vlmplan_image'>
+        <img src='images/vlmplan2.png' width="160">
+      </div>
+      <img src='images/vlmplan.png' width="160">
+    </div>
+    <script type="text/javascript">
+      function vlmplan_start() {
+        document.getElementById('vlmplan_image').style.opacity = "1";
+      }
+      function vlmplan_stop() {
+        document.getElementById('vlmplan_image').style.opacity = "0";
+      }
+      vlmplan_stop()
+    </script>
+  </td>
+  <td style="padding:20px;width:75%;vertical-align:middle">
+    <a href="https://www.sciencedirect.com/science/article/pii/S0168169926006538">
+      <span class="papertitle">Visual-Language-Guided Task Planning for Horticultural Robots</span>
+    </a>
+    <br>
+    Jose Cuaran,
+    Kendall Koe,
+    Aditya Potnis,
+    <strong>Naveen Kumar Uppalapati</strong>,
+    Girish Chowdhary
+    <br>
+    <em>Computers and Electronics in Agriculture</em>, 2026
+    <br>
+    <a href="https://arxiv.org/abs/2601.11906">arXiv</a> /
+    <a href="https://kendallkoe.com/Visual-Language-Guided-Task-Planning-for-Horticultural-Robots/">project page</a> /
+    <a href="https://www.sciencedirect.com/science/article/pii/S0168169926006538">journal</a>
+    <p></p>
+    <p>
+      A modular VLM-guided framework for robotic crop monitoring that interleaves
+      vision-language queries with action primitives across RGB feeds and 2D semantic
+      occupancy maps; benchmarked on short- and long-horizon tasks in monoculture
+      and polyculture environments, revealing key limitations of VLMs under noisy
+      semantic context.
+    </p>
+  </td>
+</tr>
+			  
+			  
 <!-- ==================== PAPER 18 ==================== -->
 <!-- ==================== THREAD - IROS 2026 ==================== -->
 <tr onmouseout="thread_stop()" onmouseover="thread_start()">
