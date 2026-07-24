@@ -81,6 +81,53 @@ settings such as high tunnels and orchards.
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+<!-- ==================== PAPER 18 ==================== -->
+<!-- ==================== THREAD - IROS 2026 ==================== -->
+<tr onmouseout="thread_stop()" onmouseover="thread_start()">
+  <td style="padding:16px;width:20%;vertical-align:middle;text-align:center">
+    <div class="one">
+      <div class="two" id='thread_image'>
+        <img src='images/thread.png' width="160">
+      </div>
+      <img src='images/thread.png' width="160">
+    </div>
+    <script type="text/javascript">
+      function thread_start() {
+        document.getElementById('thread_image').style.opacity = "1";
+      }
+      function thread_stop() {
+        document.getElementById('thread_image').style.opacity = "0";
+      }
+      thread_stop()
+    </script>
+  </td>
+  <td style="padding:20px;width:75%;vertical-align:middle">
+    <a href="https://arxiv.org/abs/2606.21792">
+      <span class="papertitle">THREAD: Trajectory Planning for Hybrid Rigid-Soft Manipulators with Environment-Aware Diffusion</span>
+    </a>
+    <br>
+    Shivani Kamtikar,
+    Pranav Asthana,
+    <strong>Naveen Kumar Uppalapati</strong>,
+    Girish Krishnan,
+    Girish Chowdhary
+    <br>
+    <em>arXiv preprint</em>, 2026
+    <br>
+    <a href="https://arxiv.org/abs/2606.21792">arXiv</a> /
+    <a href="https://robot-thread.github.io">project page</a>
+    <p></p>
+    <p>
+      THREAD is the first diffusion-based trajectory planner for hybrid rigid-soft
+      manipulators, learning a generative prior over physically realizable backbone
+      trajectories conditioned on local environment geometry with physics-inspired
+      losses for curvature, smoothness, and collision. Achieves 92.4% task success
+      with 5x fewer collisions than baselines and transfers to real hardware threading
+      through apertures as small as 1.3x the soft segment diameter.
+    </p>
+  </td>
+</tr>
+			  
 <!-- ==================== PAPER 17 ==================== -->
 <!-- ==================== HyReach - Soft Robotics 2026 ==================== -->
 <tr onmouseout="hyreach_stop()" onmouseover="hyreach_start()">
